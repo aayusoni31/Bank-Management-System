@@ -32,14 +32,14 @@ public class Signup extends JFrame implements ActionListener {
         label1.setFont(new Font("Raleway",Font.BOLD,38));
         add(label1);
 
-        JLabel label2 = new JLabel("Page 1");
-        label2.setFont(new Font("Ralway",Font.BOLD, 22));
-        label2.setBounds(330,70,600,30);
-        add(label2);
+//        JLabel label2 = new JLabel("Page 1");
+//        label2.setFont(new Font("Ralway",Font.BOLD, 22));
+//        label2.setBounds(330,70,600,30);
+//        add(label2);
 
         JLabel label3 = new JLabel("Personal Details");
         label3.setFont(new Font("Raleway", Font.BOLD,22));
-        label3.setBounds(290,90,600,30);
+        label3.setBounds(300,90,600,30);
         add(label3);
 
         JLabel labelName = new JLabel("Name :");
@@ -180,7 +180,7 @@ public class Signup extends JFrame implements ActionListener {
         next.addActionListener(this);
         add(next);
 
-        getContentPane().setBackground(new Color(222,255,228));
+        getContentPane().setBackground(new Color(224,224,224));
         setLayout(null);
         setSize(850,800);
         setLocation(360,40);
