@@ -188,6 +188,8 @@ public class Signup2 extends JFrame implements ActionListener {
         String eAccount = " ";
         if ((r1.isSelected())){
             eAccount = "Yes";
+
+
         } else if (r2.isSelected()) {
             eAccount ="No";
         }
