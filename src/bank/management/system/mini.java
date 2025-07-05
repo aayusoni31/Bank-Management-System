@@ -10,17 +10,23 @@ public class mini extends JFrame implements ActionListener {
     String pin;
     JButton button;
     mini(String pin){
+
+
         this.pin = pin;
-        getContentPane().setBackground(new Color(255,204,204));
-        setSize(400,600);
-        setLocation(20,20);
-        setLayout(null);
+
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icon/bank.png"));
+        Image i2 = i1.getImage().getScaledInstance(50,50,Image.SCALE_DEFAULT);
+        ImageIcon i3 = new ImageIcon(i2);
+        JLabel image = new JLabel(i3);
+        image.setBounds(20,10,50,50);
+        add(image);
+
 
         JLabel label1 = new JLabel();
-        label1.setBounds(20,140,400,200);
+        label1.setBounds(30,140,400,200);
         add(label1);
 
-        JLabel label2 = new JLabel("TechCoder A.V");
+        JLabel label2 = new JLabel("Whole Slip");
         label2.setFont(new Font("System", Font.BOLD,15));
         label2.setBounds(150,20,200,20);
         add(label2);
@@ -68,7 +74,10 @@ public class mini extends JFrame implements ActionListener {
         button.setBackground(Color.BLACK);
         button.setForeground(Color.WHITE);
         add(button);
-
+        getContentPane().setBackground(new Color(199, 187, 187));
+        setSize(400,600);
+        setLocation(620,50);
+        setLayout(null);
         setVisible(true);
     }
 
